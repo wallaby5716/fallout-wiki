@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>MAIN</title>
+	<title>Combat</title>
 	<meta name='Generator' content='Zim 0.76.0'>
 	<style type='text/css'>
 		a          { text-decoration: none }
@@ -40,11 +40,11 @@
 
 <!-- Header -->
 <div class='header'>
-	[ <span class='insen'>Prev</span> ]
+	[ <a href='./Character_Rules.html'>Prev</a> ]
 
 	[ <span class='insen'>Index</span> ]
 
-	[ <a href='./index_files/Character_Rules.html'>Next</a> ]
+	[ <a href='./Perks.html'>Next</a> ]
 </div>
 
 <hr />
@@ -53,35 +53,159 @@
 
 <div class='pages'>
 	<div class='heading'>
-	<h1>MAIN <a name='MAIN'></a></h1>
+	<h1>Combat <a name='MAIN:Combat'></a></h1>
 	</div>
 
 	<div class='content'>
 	<p>
-Created Saturday 04 May 2024
+Created Thursday 16 January 2025
 </p>
 <br>
-<h3>Y'all Meet In a Vault...<a id="yall-meet-in-a-vault" class="h_anchor"></a></h3>
-<br>
-<br>
-<h1>Character Creation<a id="character-creation" class="h_anchor"></a></h1>
+<h4>Initiative<a id="initiative" class="h_anchor"></a></h4>
 <p>
-<a href="https://ngreend.itch.io/goat" title="https://ngreend.itch.io/goat" class="https">https://ngreend.itch.io/goat</a>
+Initiative is rolled each round, and is sorted low to high.
 </p>
 <br>
 <p>
-<a href="./index_files/Character_Rules.html" title="Character Creation" class="page">Character Creation</a><br>
-<a href="./index_files/Perks.html" title="+Perks" class="page">+Perks</a><br>
-<a href="./index_files/Skill.html" title="+Skill" class="page">+Skill</a>
+<div style='padding-left: 30pt'>
+Init roll = 1d100 + RAD_PENALTY - Agility
+</div>
 </p>
 <br>
-<h1>Playing the game<a id="playing-the-game" class="h_anchor"></a></h1>
+<h4>Damage<a id="damage" class="h_anchor"></a></h4>
 <p>
-<a href="./index_files/Skill_Tests.html" title="+Skill Tests" class="page">+Skill Tests</a><br>
-<a href="./index_files/Combat.html" title="+Combat" class="page">+Combat</a>
+<div style='padding-left: 30pt'>
+Damage taken is reduced by DAM RES from armour. This is done automatically if using the "Take Damage" macro.
+</div>
 </p>
 <br>
 <br>
+<h4>Death<a id="death" class="h_anchor"></a></h4>
+<p>
+<i>If at the end of a full round of combat a character's HP is at 0 or below, they are at Deaths Door.</i> 
+</p>
+<ul style='padding-left: 30pt'>
+<li>If a character starts their turn on Death's Door, they are unconscious and do not act.</li>
+<li><i><b>A character starting their third turn at Death's Door dies immediately.</b></i> </li>
+<li>If a character is <i>attacked and hit while at death's door, they take damage as usual.</i></li>
+<li>If a character's HP is raised above 0, they can act on their next turn as usual and are no longer at Death's Door.</li>
+</ul>
+<br>
+<p>
+On their turn, any ally can either: 
+</p>
+<ul style='padding-left: 30pt'>
+<li>(5 AP) Make Medicine Check (Difficulty @ -1 for each HP below zero). On a success, the dying character is stabilized and will recover in 1d4 hours. On a failure, the character's wounds are too severe, and they die.</li>
+</ul>
+<p>
+OR
+</p>
+<ul style='padding-left: 30pt'>
+<li>(2 AP per) Use a Stimpak, Super Stimpak, or Hydra. These chems restore HP as usual. </li>
+</ul>
+<br>
+<br>
+<h4>Movement<a id="movement" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+1 AP = 1 Hex
+</div>
+</p>
+<br>
+<h5>Sprint<a id="sprint" class="h_anchor"></a></h5>
+<p>
+<div style='padding-left: 30pt'>
+Spend all AP, moving cost is halved. Cannot take any other actions this turn.
+</div>
+</p>
+<br>
+<h5>Sneak<a id="sneak" class="h_anchor"></a></h5>
+<p>
+<div style='padding-left: 30pt'>
+movement costs double (Usually 2AP per tile)<br>
+attacks from stealth double their critical hit range
+</div>
+</p>
+<br>
+<h5>Prone<a id="prone" class="h_anchor"></a></h5>
+<p>
+<div style='padding-left: 30pt'>
+Standing up: 3 AP<br>
+Melee attacks vs prone at +15<br>
+Ranged Attacks vs prone at -15<br>
+Ranged Attacks <i>while</i> prone at +5
+</div>
+</p>
+<br>
+<h4>Interact with object<a id="interact-with-object" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+3 AP
+</div>
+</p>
+<br>
+<h4>Help an ally with a task<a id="help-an-ally-with-a-task" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+3 AP
+</div>
+</p>
+<br>
+<h4>Use a consumable<a id="use-a-consumable" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+2 AP (self or adjacent)
+</div>
+</p>
+<br>
+<h4>Weapons<a id="weapons" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+AP cost depends on fire-rate, deducted automatically.
+</div>
+</p>
+<br>
+<h4>Cover<a id="cover" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+1/2
+</div>
+<div style='padding-left: 60pt'>
+-15% to hit
+</div>
+<div style='padding-left: 30pt'>
+3/4
+</div>
+<div style='padding-left: 60pt'>
+-25% to hit
+</div>
+<div style='padding-left: 30pt'>
+Full
+</div>
+<div style='padding-left: 60pt'>
+-50% to hit
+</div>
+</p>
+<br>
+<h4>Explosions:<a id="explosions" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+Targets in radius make Athletics test for half damage.<br>
+If an attack misses, it misses in 1d6 direction, 1d4 tiles from target.
+</div>
+</p>
+<br>
+<h4>Fire:<a id="fire" class="h_anchor"></a></h4>
+<p>
+<div style='padding-left: 30pt'>
+Fire does 1d6 damage per round until you stop, drop, and roll.
+</div>
+</p>
+<br>
+<br>
+<p>
+<a href="../index.html" title="Return to Home" class="page">Return to Home</a>
+</p>
 
 	</div>
 
@@ -90,27 +214,7 @@ Created Saturday 04 May 2024
 	<div class='page-footer'>
 		<b>Backlinks:</b>
 
-		<a href='./index_files/Character_Rules.html'>MAIN:Character Rules</a>
-
-		
-		
-
-		<a href='./index_files/Skill.html'>MAIN:Skill</a>
-
-		
-		
-
-		<a href='./index_files/Skill_Tests.html'>MAIN:Skill Tests</a>
-
-		
-		
-
-		<a href='./index_files/Combat.html'>MAIN:Combat</a>
-
-		
-		
-
-		<a href='./index_files/Perks.html'>MAIN:Perks</a>
+		<a href='../index.html'>MAIN</a>
 
 		<br /><br />
 
